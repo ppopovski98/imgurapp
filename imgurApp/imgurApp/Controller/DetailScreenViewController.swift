@@ -93,3 +93,5 @@ class DetailScreenViewController: UIViewController, PixabayManagerDelegate {
         print(error)
     }
 }
+
+//Darko help me!!!
