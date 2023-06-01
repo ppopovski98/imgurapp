@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="left" reuseIdentifier="CustomCollectionViewCell" id="gTV-IL-0wX" customClass="CustomCollectionViewCell" customModule="imgurApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="CustomCollectionViewCell" translatesAutoresizingMaskIntoConstraints="NO" id="s5X-5M-UQe">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <accessibility key="accessibilityConfiguration" identifier="CustomCollectionViewCell"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="038-49-EE4"/>
+                            <constraint firstAttribute="height" constant="300" id="B6H-Lz-vAY"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="s5X-5M-UQe" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="K1o-LR-9TA"/>
+                <constraint firstItem="s5X-5M-UQe" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="UGL-X7-h53"/>
+            </constraints>
+            <size key="customSize" width="183" height="177"/>
+            <connections>
+                <outlet property="cellImageView" destination="s5X-5M-UQe" id="xEk-NK-SGw"/>
+            </connections>
+            <point key="canvasLocation" x="68.702290076335871" y="31.690140845070424"/>
+        </collectionViewCell>
+    </objects>
+</document>
